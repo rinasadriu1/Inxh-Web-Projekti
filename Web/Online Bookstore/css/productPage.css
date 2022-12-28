@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family:Century Gothic;
+    background-color: rgb(228, 228, 228);
+    overflow-x:hidden;
+    
+}
+.hide{
+    display:none;
+}
+#no-style{
+    all:none;
+}
+/*---------------------------------------------------------------------*/
+
+.navcont{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #14279B;
+    /*border: solid 2px red;*/
+    
+    
+}
+.navcont img{
+    display:inline-block;
+    align-items: center;
+    width: 30px;
+    margin-right:50px;
+}
+.logo img{
+    width:200px;
+}
+header{
+    background-color: #14279B;
+}
+.navcont img:hover{
+    transform: scale(1.15);
+    transition: 0.1s;
+    
+}
+nav ul li:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+.navcont .logo img {
+    transform:scale(1)
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    height: 50px;
+    width: 80%;
+    /*border: solid 2px red;*/
+
+    
+}
+
+nav{
+    flex:1;
+    text-align: center;
+    max-width: 80%;
+}
+
+nav ul{
+    display:inline-block;
+    list-style-type:none;
+}
+
+nav ul li{
+    display:inline-block;
+    margin-right: 80px;
+}
+a{
+    text-decoration:none;
+    color:#FFF;
+}
+
+/*SLIDER---------------------------------------------------------------------*/
+
+header .image {
+    background-image: url("../Img/banner.jpg");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+.image .search input[type=text], input::placeholder{
+    height: 50px;
+    width: 400px;
+    cursor: pointer;
+    border:none;
+    color: #555;
+}
+.searchbar{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+
+
+/*----------------------MAIN-----------------*/
+main{
+    padding: 50px;
+    
+    /*border: solid 2px pink;*/
+}
+/*------------BestSeller--------------------*/
+
+.productCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}.product {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #FFF;
+
+
+}
+.product img{
+    width: 50%;
+}
+.productRight {
+    width: 50%;
+    background-color: #FFF;
+
+}
+
+.product .productText{
+    padding-left: 5%;
+}
+.product .productText #productName{
+    font-size: 200%;
+}
+.product .productText #author{
+    font-size: 100%;
+}
+.product .productText #textDesc{
+    font-size: 100%;
+}
+
+.product .price #price{
+    font-size: 250%;
+    margin-left:3%;
+    margin-top:20%;
+}
+
+
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /*border: solid blue 2px;*/
+    
+    padding: 10px; 
+    
+
+}
+.price > .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*border: solid greenyellow 2px;*/
+    
+
+}
+.product .price #submit{
+    color: #FFF;
+    border-radius: 50px;
+    width:50%;
+    height: 100%;
+    margin-top: 10px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    background-color: #14279B;
+    border:none;
+    font-size: larger;
+
+}
+
+
+

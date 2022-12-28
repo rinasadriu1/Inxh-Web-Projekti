@@ -1,0 +1,44 @@
+.slider{
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    overflow: hidden;
+    
+}
+.buttons{
+    width: 80%;
+    height: 20%;
+    margin-left: 10%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    font-family:Century Gothic;
+    
+}
+
+.buttons label {
+    width: 50px;
+    height: 30px;
+    background-color: #14279B;
+    border-radius: 15px;
+}
+.sliderImages{
+    width: 300%;
+    height: 300px;
+    
+    
+}
+.sliderImages img{
+    width: 100%;
+    transition: 1s;
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    height: 50px;
+    width: 100vw;
+    
+}
